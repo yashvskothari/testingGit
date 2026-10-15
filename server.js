@@ -17,7 +17,8 @@ let users = [
 app.get('/api/status', (req, res) => {
     res.status(200).json({
         status: 'success',
-        message: 'API is running on the MAIN branch!',
+        message: 'API is running and merged successfully!',
+
         timestamp: new Date().toISOString()
     });
 });
